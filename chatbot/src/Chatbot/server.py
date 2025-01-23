@@ -5,7 +5,7 @@ import google.generativeai as genai
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": ["http://localhost:5173", "http://127.0.0.1:5173"]}}, supports_credentials=True) 
 
-genai.configure(api_key="AIzaSyCO5IpKbLVMj2ds-plhoVjE1k64w2UeeZ8")
+genai.configure(api_key="your key")
 
 generation_config = {
   "temperature": 1,
